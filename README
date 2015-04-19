@@ -1,9 +1,12 @@
-this program merges data files, each data files contains number of (x,y) pairs. this program
-sums up all y value from different files. if a x value is in file 1 but not in file 2, 
-this program calculates the y value for file 2 using interpolation algorithm
-usage : merge_curves [-o output_file] dataset1 dataset2  ... datasetn
-if there is no output file is defined, the output will be printed to the console
+merge_curves 0.1
+author:KEN DAI 
+xiaodong.ken.dai@gmail.com
+Apr 2015
 
+
+this program merges data files, each data file contains number of (x,y) pairs. this program sums up y values from all files. if a x value is in file 1 but not in file 2, this program calculates the y value for file 2 using interpolation algorithm.
+
+the number of input files is up to 8.
 
 i.e.
 dataset1
@@ -25,12 +28,11 @@ output:
 2.5  ...
 3.8  3.0 0.0     #contribution from 2nd array is 0, it is out of x range.
 
+see https://github.com/magiccpp1/merge_curves/wiki
+
 
 usage:
 merge_curves -o output_file input_file1 input_file2 .... input_filen
 
 
-author:KEN DAI 
-xiaodong.ken.dai@gmail.com
-Apr 2015
 
